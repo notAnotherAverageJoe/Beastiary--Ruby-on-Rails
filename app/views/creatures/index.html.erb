@@ -1,0 +1,7 @@
+<!-- app/views/creatures/index.html.erb -->
+<h1>Creatures</h1>
+<ul>
+  <% @creatures.each do |creature| %>
+    <li><%= link_to creature.name, creature_path(creature) %></li>
+  <% end %>
+</ul>

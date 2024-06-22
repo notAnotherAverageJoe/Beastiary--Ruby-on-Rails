@@ -12,3 +12,14 @@
     color: #f8f9fa; /* Light color on hover */
   }
   
+  /* app/assets/stylesheets/styles.css */
+
+.book-cover {
+  border: 10px solid #ccc; /* Adjust border width and color */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  padding: 20px; /* Padding inside the border */
+  display: inline-block; /* Ensure the border wraps around the image */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+  
+
+}

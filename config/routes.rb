@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'creatures/index'
+  get 'creatures/show'
   get 'about/index'
   get 'pages/home'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -11,4 +13,5 @@ Rails.application.routes.draw do
   root "pages#home"
   get 'about', to: 'about#index', as: 'about'
   get 'tome', to: 'pages#tome', as: 'tome'
+  resources :creatures, only: [:index, :show]
 end

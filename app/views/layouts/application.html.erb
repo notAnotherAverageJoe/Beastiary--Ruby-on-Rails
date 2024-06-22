@@ -1,19 +1,18 @@
+<!-- app/views/layouts/application.html.erb -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Myapp</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag 'custom', media: 'all' %> <!-- Custom CSS -->
-    <%= javascript_importmap_tags %>
-  </head>
-
-  <body>
-     <%= render 'layouts/navbar' %>
+<head>
+  <title>Fantasy Bestiary</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
+  <%= stylesheet_link_tag 'custom', media: 'all' %> <!-- Custom CSS -->
+  <%= javascript_importmap_tags %>
+</head>
+<body>
+  <%= render 'layouts/navbar' %>
   <div class="container mt-4">
     <%= yield %>
-  </body>
+  </div>
+</body>
 </html>

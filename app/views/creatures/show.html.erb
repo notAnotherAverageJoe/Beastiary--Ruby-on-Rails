@@ -1,0 +1,12 @@
+<!-- app/views/creatures/show.html.erb -->
+<h1><%= @creature.name %></h1>
+<div class="book-cover">
+  <%= image_tag @creature.image, alt: @creature.name, width: '200px' %>
+</div>
+<p>Type: <%= @creature.creature_type %></p>
+<p><%= @creature.description %></p>
+<p>Abilities: <%= @creature.abilities %></p>
+<p>Habitat: <%= @creature.habitat %></p>
+<p>Legend: <%= @creature.legend %></p>
+
+<%= link_to 'Back to Creatures', creatures_path %>
