@@ -18,6 +18,15 @@ creatures_data = [
     habitat: 'Forests, meadows, and mystical realms', 
     image: 'unicorn.png', 
     legend: 'Unicorns have long been associated with the concept of purity and grace. According to legend, their horn possesses magical healing properties, capable of purifying water and curing diseases. In medieval times, the unicorn was often used as a symbol of Christ, representing purity and holiness.' 
+  },
+  { 
+    name: 'Phoenix', 
+    creature_type: 'Avian', 
+    description: 'The phoenix is a mythical bird that cyclically regenerates or is otherwise born again. It is associated with the sun and obtains new life by arising from the ashes of its predecessor. The phoenix symbolizes renewal, resurrection, and immortality.', 
+    abilities: 'Immortality, regeneration, fiery aura', 
+    habitat: 'Deserts and secluded forests', 
+    image: 'phoenix.png', 
+    legend: 'In Greek mythology, the phoenix is a sacred bird associated with the sun god Apollo. It cyclically regenerates or is reborn from its ashes, symbolizing renewal and the endless cycle of life and death. Across cultures, the phoenix is a symbol of hope, transformation, and eternal life.' 
   }
 ]
 
@@ -29,3 +38,4 @@ creatures_data.each do |creature_data|
     Creature.create(creature_data)
   end
 end
+# //rails db:seed
