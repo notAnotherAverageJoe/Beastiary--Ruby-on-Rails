@@ -34,19 +34,50 @@
 
 
 .book-cover {
-  border: 10px solid #ccc; /* Adjust border width and color */
-  border-radius: 10px; /* Rounded corners for a softer look */
+  border: 2px solid #fff; /* White border to simulate light emission */
+  border-radius: 10px; /* Rounded corners */
   padding: 20px; /* Padding inside the border */
-  display: inline-block; /* Ensure the border wraps around the image */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
-  
-  
+  display: inline-block; /* Ensure the border wraps around the content */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Neon glow effect */
+  background-color: rgba(0, 255, 255, 0.1); /* Light background color */
+  animation: neon-glow 2s ease-in-out infinite alternate; /* Neon animation */
 
+  /* Optional: Text color and font */
+  color: #fff; /* White text color */
+  font-family: Arial, sans-serif; /* Choose a suitable font */
+  text-align: center; /* Center-align text */
 }
+
+@keyframes neon-glow {
+  from {
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.8), 0 0 60px rgba(0, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+  to {
+    text-shadow: 0 0 40px rgba(0, 255, 255, 0.8), 0 0 80px rgba(0, 255, 255, 0.8), 0 0 120px rgba(0, 255, 255, 0.8);
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
+  }
+}
+
+
 h1{
   color:antiquewhite
 }
 p{
   color:antiquewhite
 
+}
+.button {
+  padding: 8px 16px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Button background color on hover */
 }
